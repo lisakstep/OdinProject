@@ -1,26 +1,44 @@
 /* Styling for my version of the Google homepage */
 * {
 	
-	border: 1px black dashed;
-	
+	/*border: 1px black dashed;
+	*/
 	background-color: #fff;
 }
 
 .googleLogo img {
 	height: 125px;
-	width: 350px;
+	width: 400px;
+	padding-left: 23px;
 
 }
 
-.searchBox {
-	-webkit-appearance: none;
-	width: 300px;
+#textBox {
+	/* border-color: 3px solid blue; */
+	/*background-image: url('http://icons.iconarchive.com/icons/marcus-roberto/google-play/512/Google-Voice-Search-icon.png');
+	background-repeat: no-repeat;
+	*/
+	padding: 4px 0px 9px 4px;
+
+	border-top: 1px solid blue;
+	border-left: 1px solid blue;
+	border-bottom: 1px solid blue;
+	margin-right: 0;
+	border-right-width: 0px;
+	height: 26px;
+	font-size: 1.2em;
+	float: left;
+}
+
+#voice-search {
+	float: left;
+	display: inline;
 }
 
 .searchBox, .googleLogo {
 	position: relative;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
+	/*margin-right: auto; */
 	width: 50%;
 	text-align: -webkit-center;
 }
@@ -36,6 +54,23 @@
 	margin-top: 17%;
 }
 
+div div {
+	text-align: -webkit-center;
+}
+
+form {
+	width: 500px;
+}
+
 form input {
 	margin-left: 3px;
+}
+
+form img {
+	height: 39px;
+	width: 39px;
+	border-right: 1px solid blue;
+	border-bottom:  1px solid blue;
+	border-top: 1px solid blue;
+	border-left-width: 0px;
 }
