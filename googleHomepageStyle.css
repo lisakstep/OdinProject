@@ -1,16 +1,41 @@
 /* Styling for my version of the Google homepage */
 * {
 	
-	/*border: 1px black dashed;
-	*/
+	/*border: 1px dashed blue; */
+	
 	background-color: #fff;
+}
+
+.header {
+	float: right;
+	/*border: 1px transparent dashed; */
+	margin-bottom: 79px;
+	margin-left: 5px;
+}
+
+.header a {
+	padding: 0 15px 5px 15px;
+	border: 0 5px 20px 0;
+	text-decoration: none;
+	display: inline-block;
+
+}
+
+.header a img {
+	height: 25px;
+	padding-bottom: none;
+	margin-top: 5px;
+}
+
+.signin {
+	background-color: blue;
+	color: #fff;
 }
 
 .googleLogo img {
 	height: 125px;
 	width: 400px;
-	padding-left: 23px;
-
+	padding-left: 0px;
 }
 
 #textBox {
@@ -51,7 +76,8 @@
 	background-color: navy;
 	*/
 	height: 125px;
-	margin-top: 17%;
+	margin-top: 57%;
+	clear: both;
 }
 
 div div {
