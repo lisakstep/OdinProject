@@ -4,6 +4,7 @@
 	/*border: 1px dashed blue; */
 	
 	background-color: #fff;
+
 }
 
 .header {
@@ -11,6 +12,8 @@
 	/*border: 1px transparent dashed; */
 	margin-bottom: 79px;
 	margin-left: 5px;
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
 }
 
 .header a {
