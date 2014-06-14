@@ -103,3 +103,38 @@ form img {
 	border-top: 1px solid blue;
 	border-left-width: 0px;
 }
+
+.footer {
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	clear: both;
+	background-color: #d3d3d3;
+	/*border: 2px dashed blue; */
+	margin-top: 45%;
+	height: 30px;
+	width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background-color: #d3d3d3;
+
+}
+
+li {
+	display: inline;
+	background-color: #d3d3d3;
+	padding: 0 12px;
+	margin:auto;
+}
+
+.left {
+	float: left;
+	margin-right: 5px;
+}
+
+.right {
+	float: right;
+}
