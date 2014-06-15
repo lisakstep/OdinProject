@@ -30,6 +30,10 @@
 	margin-top: 5px;
 }
 
+body {
+	margin: 0;
+}
+
 .signin {
 	background-color: blue;
 	color: #fff;
@@ -110,9 +114,11 @@ form img {
 	clear: both;
 	background-color: #d3d3d3;
 	/*border: 2px dashed blue; */
-	margin-top: 45%;
-	height: 30px;
 	width: 100%;
+	position: fixed;
+	bottom: 0;
+	padding: 7px 0;
+
 }
 
 ul {
