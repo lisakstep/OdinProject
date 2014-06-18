@@ -1,0 +1,75 @@
+* {
+    font-family: Verdana;
+}
+
+#header {
+  border-radius: 5px; 
+  background-color: #7094A6;
+  height: 55px;
+  width: 98%;
+  position: fixed;
+  float: left;
+  z-index: 1;
+  margin-bottom: 5px;
+}
+
+.left {
+  border-radius: 5px;
+  background-color: #ffffee;
+  height: 450px;
+  width: 15%;
+  float: left;
+  margin-right: 5px;
+  clear: left;
+}
+
+.right {
+  border-radius: 5px;
+  background-color: #ffffee;
+  height: 450px;
+  width: 82%;
+  float: right;
+}
+
+#footer {
+    border-radius: 5px;
+    background-color: #7094A6;
+    height: 55px;
+    width: 98%;
+    clear: both;
+    text-align: center;
+    padding: 5px;
+}
+
+#name {
+    padding-left: 5px;
+    float: left;
+    color: white;
+    font-size: 1em;
+}
+
+#eaddress {
+    padding-right: 5px;
+    float: right;
+    color: white;
+}
+
+#linkedin {
+    padding-right: 5px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #DC143C;
+}
+
+h3 {
+    padding: 50px;
+}

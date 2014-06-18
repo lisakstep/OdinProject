@@ -1,0 +1,30 @@
+
+#top {
+    background-color: #ccc;
+    padding: 20px
+}
+
+.intro {
+    color: red;
+    font-weight: bold;
+}
+
+p {
+    font: 14px/1.5 "Times New Roman", times, serif;
+    padding: 30px 10px;
+    border: 1px black solid;
+    border-width: 1px 5px 5px 1px;
+    border-color: red green blue yellow;
+    margin: 10px 50px;
+}
+
+body {
+    background: white url(https://lh6.googleusercontent.com/_3FYzZNOu2xp1Hhzrb1BxaE2rcSP6aldfQepTrUPZCQ=w216-h162-p-no) repeat-y center top;
+}
+
+#navigation a {
+    display: block;
+    padding: 20px 10px;
+        background-color: #ccc;
+
+}
