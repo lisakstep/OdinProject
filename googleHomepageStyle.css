@@ -1,0 +1,146 @@
+/* Styling for my version of the Google homepage */
+* {
+	
+	/*border: 1px dashed blue; */
+	
+	background-color: #fff;
+
+}
+
+.header {
+	float: right;
+	/*border: 1px transparent dashed; */
+	margin-bottom: 79px;
+	margin-left: 5px;
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+}
+
+.header a {
+	padding: 0 15px 5px 15px;
+	border: 0 5px 20px 0;
+	text-decoration: none;
+	display: inline-block;
+
+}
+
+.header a img {
+	height: 25px;
+	padding-bottom: none;
+	margin-top: 5px;
+}
+
+body {
+	margin: 0;
+}
+
+.signin {
+	background-color: blue;
+	color: #fff;
+}
+
+.googleLogo img {
+	height: 125px;
+	width: 400px;
+	padding-left: 0px;
+}
+
+#textBox {
+	/* border-color: 3px solid blue; */
+	/*background-image: url('http://icons.iconarchive.com/icons/marcus-roberto/google-play/512/Google-Voice-Search-icon.png');
+	background-repeat: no-repeat;
+	*/
+	padding: 4px 0px 9px 4px;
+
+	border-top: 1px solid blue;
+	border-left: 1px solid blue;
+	border-bottom: 1px solid blue;
+	margin-right: 0;
+	border-right-width: 0px;
+	height: 26px;
+	font-size: 1.2em;
+	float: left;
+}
+
+#voice-search {
+	float: left;
+	display: inline;
+}
+
+.searchBox, .googleLogo {
+	position: relative;
+	margin: auto;
+	/*margin-right: auto; */
+	width: 50%;
+	text-align: -webkit-center;
+}
+
+.logoAndSearch {
+	/*position: absolute;
+	margin-right: auto;
+	margin-left: auto;
+	
+	background-color: navy;
+	*/
+	height: 125px;
+	margin-top: 57%;
+	clear: both;
+}
+
+div div {
+	text-align: -webkit-center;
+}
+
+form {
+	width: 500px;
+}
+
+form input {
+	margin-left: 3px;
+}
+
+form img {
+	height: 39px;
+	width: 39px;
+	border-right: 1px solid blue;
+	border-bottom:  1px solid blue;
+	border-top: 1px solid blue;
+	border-left-width: 0px;
+}
+
+.footer {
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	clear: both;
+	background-color: #d3d3d3;
+	/*border: 2px dashed blue; */
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	padding: 7px 0;
+
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background-color: #d3d3d3;
+
+}
+
+li {
+	display: inline;
+	background-color: #d3d3d3;
+	padding: 0 12px;
+	margin:auto;
+}
+
+.left {
+	float: left;
+	margin-right: 5px;
+}
+
+.right {
+	float: right;
+}
