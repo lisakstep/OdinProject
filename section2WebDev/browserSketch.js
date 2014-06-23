@@ -3,8 +3,12 @@ $(document).ready( function() {
 var numberOfSquares = 16;
 var squaresPerSide = Math.sqrt(numberOfSquares);
 var widthOfField = 500;
-var cellBorderDimension = 2;	
-var drawingCellDimension = (widthOfField/squaresPerSide) - cellBorderDimension;
+var cellBorderDimension = 0;	
+var drawingCellDimension = (widthOfField/squaresPerSide) - 2*cellBorderDimension;
+
+
+// Set the border for the drawing cells
+
 
 // Draw the cells
 drawTheSquares();
@@ -33,7 +37,7 @@ function getNumberOfSquaresPerSide() {
 };
 
 function drawTheSquares() {
-	drawingCellDimension = (widthOfField/squaresPerSide) - cellBorderDimension;
+	drawingCellDimension = (widthOfField/squaresPerSide) - 2*cellBorderDimension;
 	numberOfSquares = squaresPerSide*squaresPerSide;
 	// Add the wrapper div playingField to the DOM to hold the squares
 	$('.wrapper').append("<div class='playingField'></div>");
@@ -44,7 +48,7 @@ function drawTheSquares() {
 		// make the div for the row
 		$('.playingField').append('<div class="row' + j + '"></div>');
 		// make the div have the correct height
-		$('.' + thisRow).height(drawingCellDimension + cellBorderDimension);
+		$('.' + thisRow).height(drawingCellDimension + 2*cellBorderDimension);
 
 		// Add the cells to the row
 		var thisRow = "row" + j;
@@ -59,6 +63,10 @@ function drawTheSquares() {
 	// Set the styling for the proper dimensions
 	$('.drawingCell').height(drawingCellDimension);	
 	$('.drawingCell').width(drawingCellDimension);	
+
+	$('.drawingCell').css('border-style', 'solid');
+$('.drawingCell').css('border-color', 'white');
+$('.drawingCell').css('border-width', cellBorderDimension);
 
 
 	// Start the new mouseenter event handler for the new cell divs:
