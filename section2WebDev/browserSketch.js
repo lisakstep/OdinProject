@@ -4,33 +4,20 @@ var numberOfSquares = 16;
 var squaresPerSide = Math.sqrt(numberOfSquares);
 var widthOfField = 500-4;
 var drawingCellDimension = (widthOfField/squaresPerSide) - 2;
-	//alert("the jquery file");
-	//console.log("yep, i'm loaded.");
-// Add the wrapper div to the DOM
-$('.wrapper').append("<div class='playingField'></div>");
+	
 
 // Draw the cells
 drawTheSquares();
 
-// Set the styling for the proper dimensions
-//$('.drawingCell').height(drawingCellDimension);	
-//$('.drawingCell').width(drawingCellDimension);	
-
-	//console.log("drawingCellDimension: " + drawingCellDimension );
 
 
 /************** Event handlers ****************************/
-	// Change the cell color when the mouse touches it
-$('.drawingCell').on('mouseenter', function() {
-	$(this).css('background-color', '#0ff');
-	});
 
 	// Handle button click for Start Over
 $('.startOver').on('click', function() {
-	// Hidejqu the current grid
+	// Delete the current grid
 	deleteTheSquares();
 	getNumberOfSquaresPerSide();
-	console.log("new squaresPerSide as entered by user is "  + squaresPerSide);
 	drawTheSquares();
 });
 
@@ -48,15 +35,25 @@ function getNumberOfSquaresPerSide() {
 function drawTheSquares() {
 	drawingCellDimension = (widthOfField/squaresPerSide) - 2;
 	numberOfSquares = squaresPerSide*squaresPerSide;
+	// Add the wrapper div playingField to the DOM to hold the squares
+	$('.wrapper').append("<div class='playingField'></div>");
+	// Draw the squares one row at a time
 	for (var i = 0; i < numberOfSquares; i++) {
 		$('.playingField').append('<div class="drawingCell"></div>');
 	}
 	// Set the styling for the proper dimensions
-$('.drawingCell').height(drawingCellDimension);	
-$('.drawingCell').width(drawingCellDimension);	
+	$('.drawingCell').height(drawingCellDimension);	
+	$('.drawingCell').width(drawingCellDimension);	
+
+
+	// Start the new mouseenter event handler for the new cell divs:
+	// Change the cell color when the mouse touches it
+	$('.drawingCell').on('mouseenter', function() {
+	$(this).css('background-color', '#0ff');
+	});
 };
 
 function deleteTheSquares() {
-		$('.drawingCell').remove();
+		$('.playingField').remove();
 	};
 });
