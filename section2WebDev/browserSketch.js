@@ -2,9 +2,9 @@ $(document).ready( function() {
 	// Set up the drawing field and cell parameters
 var numberOfSquares = 16;
 var squaresPerSide = Math.sqrt(numberOfSquares);
-var widthOfField = 500-4;
-var drawingCellDimension = (widthOfField/squaresPerSide) - 2;
-	
+var widthOfField = 500;
+var cellBorderDimension = 2;	
+var drawingCellDimension = (widthOfField/squaresPerSide) - cellBorderDimension;
 
 // Draw the cells
 drawTheSquares();
@@ -28,12 +28,12 @@ function getNumberOfSquaresPerSide() {
 	do {
 		number = prompt("How many squares per side for your next game?");
 	}
-	while( (number < 2) || (number > 35) );
+	while( (number < 2) || (number > 99) );
 	squaresPerSide = number;
 };
 
 function drawTheSquares() {
-	drawingCellDimension = (widthOfField/squaresPerSide) - 2;
+	drawingCellDimension = (widthOfField/squaresPerSide) - cellBorderDimension;
 	numberOfSquares = squaresPerSide*squaresPerSide;
 	// Add the wrapper div playingField to the DOM to hold the squares
 	$('.wrapper').append("<div class='playingField'></div>");
@@ -43,6 +43,9 @@ function drawTheSquares() {
 	for (var j = 0; j < squaresPerSide; j++) {
 		// make the div for the row
 		$('.playingField').append('<div class="row' + j + '"></div>');
+		// make the div have the correct height
+		$('.' + thisRow).height(drawingCellDimension + cellBorderDimension);
+
 		// Add the cells to the row
 		var thisRow = "row" + j;
 
