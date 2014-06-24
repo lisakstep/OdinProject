@@ -26,4 +26,6 @@ my_age_in_seconds = my_age_in_minutes * seconds_in_a_minute
 puts "I am approximately #{my_age_in_seconds} seconds old."
 
 # how many chocolates do I hope to eat in my life?
-
+# if I am 1031 million seconds old, how old am I?
+my_theoretical_age = ( ( ( (1031000000 / seconds_in_a_minute) / minutes_in_an_hour) / hours_in_a_day) / days_in_a_year) 
+puts "If I am 1031 million seconds old, I am #{my_theoretical_age} years old."
