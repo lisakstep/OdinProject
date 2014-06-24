@@ -1,8 +1,8 @@
 $(document).ready( function() {
 	// Set up the drawing field and cell parameters
-var numberOfSquares = 16;
+var numberOfSquares = 25;
 var squaresPerSide = Math.sqrt(numberOfSquares);
-var widthOfField = 500;
+var widthOfField = 690;
 var cellBorderDimension = 0;	
 var drawingCellDimension = (widthOfField/squaresPerSide) - 2*cellBorderDimension;
 
@@ -30,9 +30,9 @@ $('.startOver').on('click', function() {
 function getNumberOfSquaresPerSide() {
 	var number;
 	do {
-		number = prompt("How many squares per side for your next game?");
+		number = prompt("How many squares per side for your next game? Please pick a number from 1 to 77.");
 	}
-	while( (number < 2) || (number > 99) );
+	while( (number < 1) || (number > 77) );
 	squaresPerSide = number;
 };
 
