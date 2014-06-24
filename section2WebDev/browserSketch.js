@@ -65,14 +65,14 @@ function drawTheSquares() {
 	$('.drawingCell').width(drawingCellDimension);	
 
 	$('.drawingCell').css('border-style', 'solid');
-$('.drawingCell').css('border-color', 'white');
-$('.drawingCell').css('border-width', cellBorderDimension);
+	$('.drawingCell').css('border-color', 'white');
+	$('.drawingCell').css('border-width', cellBorderDimension);
 
 
 	// Start the new mouseenter event handler for the new cell divs:
 	// Change the cell color when the mouse touches it
 	$('.drawingCell').on('mouseenter', function() {
-	$(this).css('background-color', '#0ff');
+		$(this).css('background-color', '#0ff');
 	});
 };
 
