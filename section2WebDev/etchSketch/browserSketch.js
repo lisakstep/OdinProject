@@ -1,3 +1,6 @@
+// Odin Project js/jQuery etch-a-sketch project solution by
+// Lisa Stephens 6/2014
+
 $(document).ready( function() {
 	// Set up the drawing field and cell parameters
 var numberOfSquares = 25;
