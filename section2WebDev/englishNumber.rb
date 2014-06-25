@@ -22,7 +22,26 @@ def englishNumber number
   #  "left" is how much of the number we still have left to write out.
   #  "write" is the part we are writing out right now.
   #  write and left... get it?  :)
-  left  = number
+
+  #  My code to test for thousands
+    left  = number
+    write = left / 1000
+    left = left - write*1000
+
+    if write > 0
+      thousands = englishNumber write
+      numString = numString + thousands + ' thousand'
+
+      if left > 0
+        numString = numString + ' '
+      end 
+
+    end
+
+
+
+
+  # Testing for hundreds below here
   write = left/100          #  How many hundreds left to write out?
   left  = left - write*100  #  Subtract off those hundreds.
   
@@ -85,6 +104,16 @@ end
 
 puts englishNumber(55)
 puts englishNumber(1322)
+puts englishNumber(55543)
+puts englishNumber(132289)
+puts englishNumber(5587654)
+puts englishNumber(132200)
+puts englishNumber(100)
+puts englishNumber(1000)
+puts englishNumber(10000)
+puts englishNumber(100000)
+puts englishNumber(1000000)
+puts englishNumber(10000000)
 
 
 
