@@ -8,18 +8,35 @@
 # the lyrics to that beloved classic, that field-trip favorite: "99 Bottles 
 # of Beer on the Wall."
 
-song_body_a = ' bottles of beer on the wall, '
-song_body_b = ' bottles of beer. Take one down, pass it around, '
-song_body_c = ' bottles of beer on the wall.'
+song_body_a = ' of beer on the wall, '
+song_body_b = ' of beer. Take one down, pass it around, '
+song_body_c = ' of beer on the wall.'
+bottle = " bottle"
+bottles = " bottles"
 
 bottles_of_beer = 99
 
 while bottles_of_beer > 0
 
-	puts ( bottles_of_beer.to_s + song_body_a )
-	puts ( bottles_of_beer.to_s + song_body_b )
-	bottles_of_beer -= 1
-	puts ( bottles_of_beer.to_s + song_body_c )
-	puts
+	if bottles_of_beer > 1
+		puts ( bottles_of_beer.to_s + bottles + song_body_a )
+		puts ( bottles_of_beer.to_s + bottles + song_body_b )
+		bottles_of_beer -= 1
+	else
+		puts ( bottles_of_beer.to_s + bottle + song_body_a )
+		puts ( bottles_of_beer.to_s + bottle + song_body_b )
+		bottles_of_beer -= 1
+	end
+	
+
+
+	if ( bottles_of_beer > 1 ) or ( bottles_of_beer == 0 )
+		puts ( bottles_of_beer.to_s + bottles + song_body_c )
+		puts
+	else
+		puts ( bottles_of_beer.to_s + bottle + song_body_c )
+		puts
+	end
+	
 	
 end
