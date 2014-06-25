@@ -25,6 +25,34 @@ def englishNumber number
 
     left  = number
 
+    #  My code to handle trillions
+    write = left / 1000000000000
+    left = left - write*1000000000000
+
+    if write > 0
+      trillions = englishNumber write
+      numString = numString + trillions + ' trillion'
+
+      if left > 0
+        numString = numString + ' '
+      end 
+
+    end
+
+    #  My code to handle billions
+    write = left / 1000000000
+    left = left - write*1000000000
+
+    if write > 0
+      billions = englishNumber write
+      numString = numString + billions + ' billion'
+
+      if left > 0
+        numString = numString + ' '
+      end 
+
+    end
+
   #  My code to handle millions
     write = left / 1000000
     left = left - write*1000000
@@ -118,16 +146,16 @@ def englishNumber number
   numString
 end
 
-puts englishNumber(55)
+puts englishNumber(5988838335)
 puts englishNumber(1375322)
 puts englishNumber(55543)
 puts englishNumber(132289)
 puts englishNumber(594587654)
-puts englishNumber(132200)
-puts englishNumber(100)
-puts englishNumber(1000)
-puts englishNumber(10000)
-puts englishNumber(100000)
+puts englishNumber(1322332600)
+puts englishNumber(109876543210)
+puts englishNumber(879642337781000)
+puts englishNumber(100007533457893)
+puts englishNumber(77634588853204)
 puts englishNumber(1000987000)
 puts englishNumber(610000000)
 
