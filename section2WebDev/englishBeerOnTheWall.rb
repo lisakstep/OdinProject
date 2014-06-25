@@ -1,4 +1,13 @@
-
+# Practice in Ruby from Learn To Program Chapter 8
+# Lisa Stephens 6/2014
+#
+# The "Bottles of Beer" lyric generation code is my own. The englishNumber code
+# is mostly Chris Pines from Learn To Program. I added extensions to gracefully
+# handle trillions, billions, millions and thousands.
+#
+# This program integrates the two to generate words rather than numbers for the
+# bottle count in the song lyric
+#
 
 def englishNumber number
   if number < 0  #  No negative numbers.
@@ -146,18 +155,44 @@ def englishNumber number
   numString
 end
 
-puts englishNumber(5988838335)
-puts englishNumber(1375322)
-puts englishNumber(55543)
-puts englishNumber(132289)
-puts englishNumber(594587654)
-puts englishNumber(1322332600)
-puts englishNumber(109876543210)
-puts englishNumber(879642337781000)
-puts englishNumber(100007533457893)
-puts englishNumber(77634588853204)
-puts englishNumber(1000987000)
-puts englishNumber(610000000)
+# "99 bottles of beer on the wall..." Write a program which prints out 
+# the lyrics to that beloved classic, that field-trip favorite: "99 Bottles 
+# of Beer on the Wall."
+
+song_body_a = ' of beer on the wall, '
+song_body_b = ' of beer. Take one down, pass it around, '
+song_body_c = ' of beer on the wall.'
+bottle = " bottle"
+bottles = " bottles"
+
+bottles_of_beer = 99
+
+while bottles_of_beer > 0
+
+  if bottles_of_beer > 1
+    puts ( englishNumber(bottles_of_beer).capitalize + bottles + song_body_a )
+    puts ( englishNumber(bottles_of_beer) + bottles + song_body_b )
+    bottles_of_beer -= 1
+  else
+    puts ( englishNumber(bottles_of_beer) + bottle + song_body_a )
+    puts ( englishNumber(bottles_of_beer) + bottle + song_body_b )
+    bottles_of_beer -= 1
+  end
+  
+
+
+  if ( bottles_of_beer > 1 ) or ( bottles_of_beer == 0 )
+    puts ( englishNumber(bottles_of_beer) + bottles + song_body_c )
+    puts
+  else
+    puts ( englishNumber(bottles_of_beer) + bottle + song_body_c )
+    puts
+  end
+  
+  
+end
+
+
 
 
 
