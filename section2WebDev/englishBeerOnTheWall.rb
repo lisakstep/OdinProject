@@ -165,7 +165,9 @@ song_body_c = ' of beer on the wall.'
 bottle = " bottle"
 bottles = " bottles"
 
-bottles_of_beer = 99
+puts "How many bottles are you starting with?"
+bottles_of_beer = gets.to_i
+puts
 
 while bottles_of_beer > 0
 
@@ -174,7 +176,7 @@ while bottles_of_beer > 0
     puts ( englishNumber(bottles_of_beer) + bottles + song_body_b )
     bottles_of_beer -= 1
   else
-    puts ( englishNumber(bottles_of_beer) + bottle + song_body_a )
+    puts ( englishNumber(bottles_of_beer).capitalize + bottle + song_body_a )
     puts ( englishNumber(bottles_of_beer) + bottle + song_body_b )
     bottles_of_beer -= 1
   end
@@ -185,7 +187,7 @@ while bottles_of_beer > 0
     puts ( englishNumber(bottles_of_beer) + bottles + song_body_c )
     puts
   else
-    puts ( englishNumber(bottles_of_beer) + bottle + song_body_c )
+    puts ( englishNumber(bottles_of_beer).capitalize + bottle + song_body_c )
     puts
   end
   
