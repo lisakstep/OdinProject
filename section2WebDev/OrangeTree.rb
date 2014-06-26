@@ -1,6 +1,7 @@
  # Practice in Ruby from Learn To Program Chapter 9
  # Lisa Stephens 6/2014
  # https://pine.fm/LearnToProgram/?Chapter=09
+ # This code is all original by me
  #
  # Make an OrangeTree class. It should have a  height method which returns its height, and a  oneYearPasses 
  # method, which, when called, ages the tree one year. Each year the tree grows taller (however much you think 
