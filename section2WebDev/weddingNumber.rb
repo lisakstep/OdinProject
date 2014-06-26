@@ -38,11 +38,11 @@ def weddingNumber number
     left = left - write*1000000000000
 
     if write > 0
-      trillions = englishNumber write
+      trillions = weddingNumber write
       numString = numString + trillions + ' trillion'
 
       if left > 0
-        numString = numString + ' '
+        numString = numString + ' and '
       end 
 
     end
@@ -52,11 +52,11 @@ def weddingNumber number
     left = left - write*1000000000
 
     if write > 0
-      billions = englishNumber write
+      billions = weddingNumber write
       numString = numString + billions + ' billion'
 
       if left > 0
-        numString = numString + ' '
+        numString = numString + ' and '
       end 
 
     end
@@ -66,11 +66,11 @@ def weddingNumber number
     left = left - write*1000000
 
     if write > 0
-      millions = englishNumber write
+      millions = weddingNumber write
       numString = numString + millions + ' million'
 
       if left > 0
-        numString = numString + ' '
+        numString = numString + ' and '
       end 
 
     end
@@ -81,11 +81,11 @@ def weddingNumber number
     left = left - write*1000
 
     if write > 0
-      thousands = englishNumber write
+      thousands = weddingNumber write
       numString = numString + thousands + ' thousand'
 
       if left > 0
-        numString = numString + ' '
+        numString = numString + ' and '
       end 
 
     end
@@ -99,7 +99,7 @@ def weddingNumber number
   
   if write > 0
     #  Now here's a really sly trick:
-    hundreds  = englishNumber write
+    hundreds  = weddingNumber write
     numString = numString + hundreds + ' hundred'
      #  That's called "recursion".  So what did I just do?
     #  I told this method to call itself, but with "write" instead of
@@ -114,7 +114,7 @@ def weddingNumber number
     
     if left > 0
       #  So we don't write 'two hundredfifty-one'...
-      numString = numString + ' '
+      numString = numString + ' and '
     end
   end
   
@@ -154,18 +154,13 @@ def weddingNumber number
   numString
 end
 
-puts englishNumber(5988838335)
-puts englishNumber(1375322)
-puts englishNumber(55543)
-puts englishNumber(132289)
-puts englishNumber(594587654)
-puts englishNumber(1322332600)
-puts englishNumber(109876543210)
-puts englishNumber(879642337781000)
-puts englishNumber(100007533457893)
-puts englishNumber(77634588853204)
-puts englishNumber(1000987000)
-puts englishNumber(610000000)
+puts weddingNumber(5988838335)
+puts weddingNumber(1375322)
+puts weddingNumber(555)
+puts weddingNumber(1322)
+puts weddingNumber(594587654)
+puts weddingNumber(1322332600)
+
 
 
 
