@@ -1,5 +1,5 @@
 /*
-Lisa Stephens solution for Euler Project problem 1:
+Lisa Stephens javascript solution for Euler Project problem 1:
 
 Multiples of 3 and 5
 Problem 1

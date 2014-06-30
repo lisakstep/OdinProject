@@ -9,7 +9,7 @@
 # Find the sum of all the multiples of 3 or 5 below 1000.
 #
 # result is 233168
-#completed on 6/18/2014
+# completed on 6/29/2014
 
 top_of_range = 1000
 number = 0
